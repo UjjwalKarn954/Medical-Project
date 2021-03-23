@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>PharmaShop</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()">
+          &#9776;
+        </button>
+        <a href="index.html">PharmaShop</a>
+      </div>
+      <div class="header-links">
+        <a href="cart.html">Cart</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <h3>Shopping Categories</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      <ul>
+        <li>
+          <a href="index.html">Homeopathic</a>
+        </li>
+
+        <li>
+            <a href="index.html">Alopathic</a>
+          </li>
+          
+          <li>
+            <a href="index.html">Aurvadhic</a>
+          </li>
+
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="content">
+        <ul class="products">
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Cetrizine</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$0.5</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/Aciloc.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Aciloc</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$10</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/combiflam.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">CombiFlam</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$15</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/drortho.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Dr Ortho</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$12</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/metronidazole.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Metronidazole</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$6</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/paracetamol.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Paracetamole</a>
+              </div>
+              <div class="product-brand">IndMed</div>
+              <div class="product-price">$12</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </main>
+    <footer class="footer">
+      All right reserved.
+    </footer>
+  </div>
+  <script>
+    function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open");
+    }
+  </script>
+</body>
+
+</html>
