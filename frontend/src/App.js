@@ -1,10 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
 import './index.css';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route,Switch, Link,useParams} from 'react-router-dom';
 import React from 'react';
-import HomeScreen from './Screens/HomeScreen';
-import ProductScreen from './Screens/ProductScreen';
+
+import {useRoutes,A} from 'hookrouter';
+import routes from './router'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         <button onClick={openMenu}>
           &#9776;
         </button>
-        <Link to='/'>PharmaShop</Link>
+        <A href='/'>PharmaShop</A>
       </div>
       <div className="header-links">
         <Link to="cart.html">Cart</Link>
@@ -50,9 +51,7 @@ function App() {
     </aside>
     <main className="main">
       <div className="content">
-        <Route path="/products/:id" component={ProductScreen} />
-        <Route path="/" exact={true} component={HomeScreen} />
-        
+{useRoutes(routes)}        
       </div>
 
     </main>

@@ -1,15 +1,17 @@
-import React from 'react';
-import data from '../data';
+import React from "react";
+import data from "../data";
+import {withRouter} from 'react-router';
+const ProductScreen =  ({ prodId}) => {
+  console.log("Opened This Page");
 
- function ProductScreen(props){
-
-    console.log(props.match.params.id);
-    const product = data.products.find(x => x._id === props.match.params.id);
-    return (
+  const product = data.products.find((prod) => {
+    return prod._id == prodId;
+  });
+  return (
     <div>
-
-        <h3>{product.name}</h3>
-      </div>
-    );
-}
-export default ProductScreen;
+{product.image}
+      <h1>{product.name}</h1>
+    </div>
+  );
+};
+export default withRouter(ProductScreen);

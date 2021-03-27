@@ -4,7 +4,7 @@ export default {
         _id:'1',    
         image:'/images/Aciloc.jpg',
         category:'Aelopathic',
-        name:'medicine',
+        name:'medide',
         brand:'IndMed',
         price:6,
         rating:6.5,
